@@ -1,11 +1,29 @@
 {
-  "name": "next-express-boilerplate",
-  "private": true,
+  "name": "create-next-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "dev": "NODE_ENV=development node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
+  "author": {
+    "name": "ahnjh",
+    "email": "algorithm123@naver.com",
+    "url": "https://github.com/juhwannn"
+  },
+  "bin": {
+    "create-next-express": "./bin/generate-app.js"
+  },
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "next.js",
+    "express.js",
+    "boilerplate",
+    "customserver"
+  ],
   "dependencies": {
     "axios": "^0.27.2",
     "body-parser": "^1.20.0",
@@ -16,11 +34,13 @@
     "next": "12.3.1",
     "node-cron": "^3.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "dotenv": "^16.0.2",
     "eslint": "7.32.0",
-    "eslint-config-next": "12.3.1"
+    "eslint-config-next": "12.3.1",
+    "parcel-bundler": "^1.12.5"
   }
 }
