@@ -49,8 +49,23 @@ async function main() {
                 throw err;
             }
 
+            delete data.name;
+            delete data.description;
+            delete data.author;
+            delete data.bin;
+            delete data.keywords;
+            delete data.license;
+            data.name = projectName;
+            data.version = "0.0.0";
+
             console.log("package.json data : ");
             console.log(data);
+
+            fs.writeFile("./package.json", data, "utf-8", (err) => {
+                if (err) {
+                    throw err;
+                }
+            });
         });
 
 
