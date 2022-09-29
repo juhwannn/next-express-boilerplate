@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const NODE_ENV = process.env.NODE_ENV;
-const port = 3000;
+const port = process.env.SERVER_PORT || 3000;
 const dev = NODE_ENV !== 'staging' && NODE_ENV !== 'production';
 
 const nextJsEnabled = true;
@@ -26,8 +26,9 @@ const nextJsRequestHandler = nextJs.getRequestHandler();
         });
 
         expressServer.listen(port, (err) => {
-            if (err)
+            if (err) {
                 throw err;
+            }
 
             console.info(`http://localhost:${port}`);
         });
