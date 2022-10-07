@@ -14,6 +14,14 @@
 - node-cron
 - axios
 
+# Installation
+```shell script
+$ npm install create-next-express
+```
+```shell script
+$ npx create-next-express ${FOLDER_NAME}
+```
+
 # App structure
 ```
 .
@@ -36,6 +44,15 @@
 ├── package.json
 └── package-lock.json
 ```
+
+# Dotenv
+You need to create an .env file
+- SERVER_PORT
+- DB_HOST
+- DB_DATABASE
+- DB_ID
+- DB_PW
+- DB_PORT
 
 # Github
 https://github.com/juhwannn/next-express-boilerplate
