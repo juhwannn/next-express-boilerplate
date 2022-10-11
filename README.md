@@ -1,3 +1,6 @@
+TODO: 
+- npx create-next-express 시 옵션 (generate-app.js)
+
 # Next.js 
 `npx create-next-app`
 
@@ -13,6 +16,8 @@
 - cookie-parser
 - node-cron
 - axios
+- swagger-jsdoc
+- swagger-ui-express
 
 # Installation
 ```shell script
