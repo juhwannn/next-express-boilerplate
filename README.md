@@ -31,10 +31,10 @@ $ npx create-next-express ${FOLDER_NAME}
 ```
 .
 ├── pages
-│    ├── _app.js
+│    ├── _app.tsx
 │    ├── api
-│    ├── index.js
-│    └── test.js
+│    ├── index.tsx
+│    └── test.tsx
 ├── public
 │    ├── favicon.ico
 │    └── vercel.svg
@@ -43,7 +43,7 @@ $ npx create-next-express ${FOLDER_NAME}
 ├── styles
 │    ├── Home.module.css
 │    └── globals.css
-├── server.js
+├── server.tsx
 ├── next.config.js
 ├── README.md
 ├── package.json

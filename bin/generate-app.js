@@ -29,7 +29,7 @@ try {
 
 async function main() {
     try {
-        console.log("@@@");
+        console.log("3");
 
         console.log('Downloading files...');
         execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
@@ -43,34 +43,31 @@ async function main() {
         execSync('rm -rf ./.git');
         fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
 
-        console.log("Changing the package.json file");
-        fs.readFile("./package.json", "utf-8", (err, data) => {
-            if (err) {
-                throw err;
-            }
-
-            delete data.name;
-            delete data.description;
-            delete data.author;
-            delete data.bin;
-            delete data.keywords;
-            delete data.license;
-            data.name = projectName;
-            data.version = "0.0.0";
-
-            console.log("package.json data : ");
-            console.log(data);
-
-            fs.writeFile("./package.json", data, "utf-8", (err) => {
-                if (err) {
-                    throw err;
-                }
-            });
-        });
-
+        console.log("Please changing the package.json file");
+        // path.join("../");
+        // let data = fs.readFileSync("./package.json", "utf-8");
+        // data = JSON.parse(data);
+        //
+        // delete data.description;
+        // delete data.author;
+        // delete data.bin;
+        // delete data.keywords;
+        // delete data.license;
+        // delete data.main;
+        //
+        // data.name = projectName;
+        // data.version = "0.0.0";
+        //
+        // console.log("package.json data : ");
+        // console.log(data);
+        //
+        // fs.writeFile("./package.json", JSON.stringify(data), "utf-8", (err) => {
+        //     if (err) {
+        //         throw err;
+        //     }
+        // });
 
         console.log("The installation is done, this is ready to use !");
-
     } catch (error) {
         console.log(error);
     }
