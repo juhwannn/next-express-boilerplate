@@ -2,11 +2,11 @@
   "name": "create-next-express",
   "version": "1.0.5",
   "description": "next-express-boilerplate",
-  "main": "server.tsx",
+  "main": "server.js",
   "scripts": {
-    "dev": "NODE_ENV=development node server.tsx",
+    "dev": "NODE_ENV=development node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.tsx"
+    "start": "NODE_ENV=production node server.js"
   },
   "author": {
     "name": "ahnjh",
@@ -42,7 +42,6 @@
     "swagger-ui-express": "^4.5.0"
   },
   "devDependencies": {
-    "@types/react": "18.0.26",
     "dotenv": "^16.0.2",
     "eslint": "7.32.0",
     "eslint-config-next": "12.3.1",

@@ -1,10 +1,10 @@
-console.log(`${__filename}:1`);
+console.log(`${__filename}:1`)
 
-const express = require('express');
-const router = express.Router();
+import express from 'express'
+const router = express.Router()
 
 router.get('/', (req, res) => {
-    console.log("test hello");
-});
+  console.log('test hello')
+})
 
-module.exports = router;
+module.exports = router
